@@ -6,291 +6,243 @@
   <title>Swetalin Rout | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <canvas id="particles-canvas"></canvas>
-
-  <div class="bg-blob blob-1"></div>
-  <div class="bg-blob blob-2"></div>
-  <div class="bg-blob blob-3"></div>
+  <canvas id="starfield"></canvas>
 
   <nav class="navbar">
     <div class="nav-logo">SR</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Swetalin Rout</h1>
-      <p class="hero-role"><span id="typed-text"></span><span class="cursor">|</span></p>
-      <p class="hero-sub">BTech CS (AI/ML) &nbsp;·&nbsp; Open Source Contributor &nbsp;·&nbsp; Building with MERN, Python &amp; Web3</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <div class="hero-text">
+      <p class="hero-label">Full Stack Developer &amp; UI/UX Designer</p>
+      <h1 class="hero-name">SWETALIN<br>ROUT</h1>
+      <p class="hero-sub">BTech CS · AI/ML · Open Source · MERN · Python · Web3</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="avatar-wrapper">
-        <div class="avatar-ring"></div>
-        <div class="hero-avatar">SR</div>
+    <div class="hero-globe">
+      <canvas id="globe-canvas"></canvas>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">ABOUT</h2>
+      <div class="about-body reveal">
+        <p class="about-big">Applying a cross-disciplinary expertise in crafting and executing full-stack applications, AI-driven products, and intuitive user experiences.</p>
+        <p class="about-detail">I'm <strong>Swetalin Rout</strong> — currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability. I believe in learning by building, always pushing the limits of what technology can do.</p>
       </div>
     </div>
   </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title reveal">About Me</h2>
-      <div class="glass-card about-card reveal">
-        <p>I'm <strong>Swetalin Rout</strong>, a passionate BTech Computer Science student specialising in AI/ML. I love crafting full-stack web applications and designing clean, intuitive user experiences.</p>
-        <p>I actively contribute to open-source projects and am currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.</p>
-        <p>I believe in learning by building — always pushing the limits of what technology can do.</p>
+  <section id="expertise">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">EXPERTISE</h2>
+      <div class="marquee-track reveal">
+        <div class="marquee">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>AI&nbsp;/&nbsp;ML</span><span>Web3</span><span>UI&nbsp;/&nbsp;UX</span><span>Open Source</span>
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>AI&nbsp;/&nbsp;ML</span><span>Web3</span><span>UI&nbsp;/&nbsp;UX</span><span>Open Source</span>
+        </div>
+      </div>
+      <div class="expertise-list">
+        <div class="expertise-item reveal">
+          <span class="e-num">01</span>
+          <div class="e-info">
+            <h3>Full Stack Development</h3>
+            <p>MERN · REST APIs · Auth · Databases</p>
+          </div>
+        </div>
+        <div class="expertise-item reveal">
+          <span class="e-num">02</span>
+          <div class="e-info">
+            <h3>AI / ML Engineering</h3>
+            <p>Python · Gemini AI · Model Integration · Observability</p>
+          </div>
+        </div>
+        <div class="expertise-item reveal">
+          <span class="e-num">03</span>
+          <div class="e-info">
+            <h3>UI / UX Design</h3>
+            <p>Design Systems · Figma · Responsive · Animations</p>
+          </div>
+        </div>
+        <div class="expertise-item reveal">
+          <span class="e-num">04</span>
+          <div class="e-info">
+            <h3>Open Source</h3>
+            <p>Linux Foundation · LFX Mentorship · GenAI Observability</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal-stagger">HTML</div>
-        <div class="skill-card reveal-stagger">CSS</div>
-        <div class="skill-card reveal-stagger">JavaScript</div>
-        <div class="skill-card reveal-stagger">React</div>
-        <div class="skill-card reveal-stagger">Node.js</div>
-        <div class="skill-card reveal-stagger">Express</div>
-        <div class="skill-card reveal-stagger">MongoDB</div>
-        <div class="skill-card reveal-stagger">Python</div>
-        <div class="skill-card reveal-stagger">AI / ML</div>
-        <div class="skill-card reveal-stagger">Web3</div>
-        <div class="skill-card reveal-stagger">UI/UX Design</div>
-        <div class="skill-card reveal-stagger">Open Source</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="experience" id="experience">
-    <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date">2026 · Present</span>
-            <h3>LFX Mentee — Linux Foundation</h3>
-            <p>Working on distributed tracing and GenAI observability under the LFX Mentorship Programme. Contributing to open-source tools that improve AI system monitoring.</p>
-            <div class="timeline-tags"><span>Open Source</span><span>GenAI</span><span>Observability</span></div>
+  <section id="work">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">WORK</h2>
+      <div class="projects-list">
+        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
+          <span class="p-num">01</span>
+          <div class="p-info">
+            <h3>MemoraX</h3>
+            <p>AI-powered study platform — flashcards &amp; quizzes via Gemini AI</p>
           </div>
-        </div>
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date">2024 · Present</span>
-            <h3>BTech CS (AI/ML)</h3>
-            <p>Pursuing Bachelor of Technology in Computer Science with specialisation in Artificial Intelligence and Machine Learning. Building strong foundations in algorithms, data structures, and intelligent systems.</p>
-            <div class="timeline-tags"><span>AI/ML</span><span>CS Fundamentals</span><span>Research</span></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date">2023 · Ongoing</span>
-            <h3>Full Stack Developer — Freelance &amp; Projects</h3>
-            <p>Building full-stack web applications using the MERN stack. Developed AI-powered platforms, journaling apps, and e-commerce solutions with modern UI/UX practices.</p>
-            <div class="timeline-tags"><span>MERN</span><span>React</span><span>Node.js</span></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card glass-card reveal-stagger tilt-card">
-          <div class="project-icon">🧠</div>
-          <h3>MemoraX</h3>
-          <p>AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
-          <div class="project-tags">
-            <span>AI/ML</span><span>Gemini</span><span>React</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
-        </div>
-
-        <div class="project-card glass-card reveal-stagger tilt-card">
-          <div class="project-icon">🌦️</div>
-          <h3>Weather-Aware Journal</h3>
-          <p>A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
-          <div class="project-tags">
-            <span>API</span><span>JavaScript</span><span>CSS</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
-        </div>
-
-        <div class="project-card glass-card reveal-stagger tilt-card">
-          <div class="project-icon">🛒</div>
-          <h3>Product Store</h3>
-          <p>Full-stack MERN application with complete CRUD operations, auth, and a fully responsive modern UI.</p>
-          <div class="project-tags">
-            <span>MERN</span><span>MongoDB</span><span>React</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2 class="section-title reveal">Get In Touch</h2>
-      <p class="contact-sub reveal">Let's connect and build something amazing together!</p>
-      <div class="contact-links">
-        <a href="mailto:swetalinrout2006@gmail.com" class="contact-card glass-card reveal-stagger tilt-card">
-          <span>📧</span>
-          <p>swetalinrout2006@gmail.com</p>
+          <div class="p-tags">AI/ML · Gemini · React</div>
+          <span class="p-arrow">↗</span>
         </a>
-        <a href="https://github.com/swetalin-10" target="_blank" class="contact-card glass-card reveal-stagger tilt-card">
-          <span>💻</span>
-          <p>github.com/swetalin-10</p>
+        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
+          <span class="p-num">02</span>
+          <div class="p-info">
+            <h3>Weather-Aware Journal</h3>
+            <p>Journaling app enriched with live weather data integration</p>
+          </div>
+          <div class="p-tags">API · JavaScript · CSS</div>
+          <span class="p-arrow">↗</span>
         </a>
-        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card glass-card reveal-stagger tilt-card">
-          <span>🔗</span>
-          <p>LinkedIn Profile</p>
+        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
+          <span class="p-num">03</span>
+          <div class="p-info">
+            <h3>Product Store</h3>
+            <p>Full-stack MERN app with CRUD operations, auth &amp; responsive UI</p>
+          </div>
+          <div class="p-tags">MERN · MongoDB · React</div>
+          <span class="p-arrow">↗</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">LET'S<br>TALK</h2>
+      <div class="contact-body reveal">
+        <p class="contact-big">Have a project in mind?<br>Let's build something great together.</p>
+        <div class="contact-links">
+          <a href="mailto:swetalinrout2006@gmail.com">swetalinrout2006@gmail.com ↗</a>
+          <a href="https://github.com/swetalin-10" target="_blank">github.com/swetalin-10 ↗</a>
+          <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank">LinkedIn Profile ↗</a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Swetalin Rout · Built with HTML &amp; CSS</p>
+    <p>© 2026 Swetalin Rout</p>
   </footer>
 
   <script>
-    // ── Canvas particle network ──
-    const canvas = document.getElementById('particles-canvas');
-    const ctx = canvas.getContext('2d');
-    let W, H, particles = [];
+    // ── Starfield ──
+    const sf = document.getElementById('starfield');
+    const sctx = sf.getContext('2d');
+    let stars = [];
 
-    function resize() {
-      W = canvas.width = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', () => { resize(); initParticles(); });
-    resize();
-
-    function initParticles() {
-      particles = Array.from({ length: 70 }, () => ({
-        x: Math.random() * W, y: Math.random() * H,
-        vx: (Math.random() - 0.5) * 0.45,
-        vy: (Math.random() - 0.5) * 0.45,
-        r: Math.random() * 1.8 + 0.4,
-        alpha: Math.random() * 0.4 + 0.1,
-        color: Math.random() > 0.5 ? '123,111,255' : '0,212,255'
+    function resizeSF() {
+      sf.width = window.innerWidth;
+      sf.height = window.innerHeight;
+      stars = Array.from({ length: 180 }, () => ({
+        x: Math.random() * sf.width,
+        y: Math.random() * sf.height,
+        r: Math.random() * 1.2 + 0.2,
+        alpha: Math.random() * 0.6 + 0.1,
+        speed: Math.random() * 0.12 + 0.02
       }));
     }
-    initParticles();
+    window.addEventListener('resize', resizeSF);
+    resizeSF();
 
-    function drawParticles() {
-      ctx.clearRect(0, 0, W, H);
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
-        p.x += p.vx; p.y += p.vy;
-        if (p.x < 0 || p.x > W) p.vx *= -1;
-        if (p.y < 0 || p.y > H) p.vy *= -1;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${p.color},${p.alpha})`;
-        ctx.fill();
-        for (let j = i + 1; j < particles.length; j++) {
-          const p2 = particles[j];
-          const dx = p.x - p2.x, dy = p.y - p2.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 130) {
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(123,111,255,${0.18 * (1 - dist / 130)})`;
-            ctx.lineWidth = 0.6;
-            ctx.stroke();
-          }
-        }
+    function drawStars() {
+      sctx.clearRect(0, 0, sf.width, sf.height);
+      stars.forEach(s => {
+        s.y -= s.speed;
+        if (s.y < 0) { s.y = sf.height; s.x = Math.random() * sf.width; }
+        sctx.beginPath();
+        sctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        sctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
+        sctx.fill();
+      });
+      requestAnimationFrame(drawStars);
+    }
+    drawStars();
+
+    // ── 3D Particle Globe ──
+    const gc = document.getElementById('globe-canvas');
+    const gctx = gc.getContext('2d');
+    let globePoints = [];
+    let rotY = 0;
+    const TILT = 0.3;
+
+    function resizeGlobe() {
+      const size = Math.min(window.innerWidth * 0.42, 480);
+      gc.width = size;
+      gc.height = size;
+    }
+    window.addEventListener('resize', resizeGlobe);
+    resizeGlobe();
+
+    // Fibonacci sphere for even distribution
+    (function generateGlobe() {
+      const n = 720;
+      const phi = Math.PI * (3 - Math.sqrt(5));
+      for (let i = 0; i < n; i++) {
+        const y = 1 - (i / (n - 1)) * 2;
+        const r = Math.sqrt(1 - y * y);
+        const theta = phi * i;
+        globePoints.push({ x: Math.cos(theta) * r, y, z: Math.sin(theta) * r });
       }
-      requestAnimationFrame(drawParticles);
+    })();
+
+    function projectGlobe(p) {
+      const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
+      const x1 = p.x * cosY + p.z * sinY;
+      const z1 = -p.x * sinY + p.z * cosY;
+      const cosX = Math.cos(TILT), sinX = Math.sin(TILT);
+      const y2 = p.y * cosX - z1 * sinX;
+      const z2 = p.y * sinX + z1 * cosX;
+      const fov = 2.8, scale = fov / (fov + z2 * 0.6 + 0.5);
+      const cx = gc.width / 2, cy = gc.height / 2;
+      const radius = gc.width * 0.36;
+      return { sx: cx + x1 * radius * scale, sy: cy + y2 * radius * scale, z: z2 };
     }
-    drawParticles();
 
-    // ── Typing animation ──
-    const roles = ['Full Stack Developer', 'UI/UX Designer', 'AI/ML Enthusiast', 'Open Source Contributor'];
-    let roleIndex = 0, charIndex = 0, isDeleting = false;
-    const typedEl = document.getElementById('typed-text');
-    function type() {
-      const current = roles[roleIndex];
-      typedEl.textContent = isDeleting ? current.slice(0, charIndex--) : current.slice(0, charIndex++);
-      let delay = isDeleting ? 55 : 95;
-      if (!isDeleting && charIndex === current.length + 1) { delay = 1800; isDeleting = true; }
-      else if (isDeleting && charIndex === -1) { isDeleting = false; charIndex = 0; roleIndex = (roleIndex + 1) % roles.length; delay = 400; }
-      setTimeout(type, delay);
+    function drawGlobe() {
+      gctx.clearRect(0, 0, gc.width, gc.height);
+      rotY += 0.0045;
+      const pts = globePoints.map(p => ({ ...projectGlobe(p) })).sort((a, b) => a.z - b.z);
+      pts.forEach(p => {
+        const t = (p.z + 1) / 2;
+        const size = t * 2.2 + 0.2;
+        const alpha = t * 0.85 + 0.08;
+        gctx.beginPath();
+        gctx.arc(p.sx, p.sy, size, 0, Math.PI * 2);
+        gctx.fillStyle = `rgba(240,165,30,${alpha})`;
+        gctx.fill();
+      });
+      requestAnimationFrame(drawGlobe);
     }
-    type();
-
-    // ── Navbar scroll effect ──
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    // ── Stagger indices ──
-    document.querySelectorAll('.skills-grid .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
-    document.querySelectorAll('.projects-grid .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
-    document.querySelectorAll('.contact-links .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
+    drawGlobe();
 
     // ── Scroll reveal ──
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal, .reveal-stagger, .reveal-left').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-    // ── 3D tilt on cards ──
-    document.querySelectorAll('.tilt-card').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const r = card.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - 0.5;
-        const y = (e.clientY - r.top) / r.height - 0.5;
-        card.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) translateZ(12px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-        card.style.transition = 'transform 0.5s ease';
-        setTimeout(() => card.style.transition = '', 500);
-      });
-      card.addEventListener('mouseenter', () => card.style.transition = 'transform 0.1s ease');
-    });
-
-    // ── Button ripple ──
-    document.querySelectorAll('.btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        const ripple = document.createElement('span');
-        ripple.className = 'ripple';
-        const r = this.getBoundingClientRect();
-        ripple.style.cssText = `left:${e.clientX - r.left}px;top:${e.clientY - r.top}px`;
-        this.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 650);
-      });
+    // ── Navbar scroll ──
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
     });
   </script>
 </body>
