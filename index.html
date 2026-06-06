@@ -6,15 +6,17 @@
   <title>Swetalin Rout | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- CSS-only grain texture overlay -->
+  <div class="grain"></div>
+
   <!-- CSS star particles -->
   <div class="stars s1"></div>
   <div class="stars s2"></div>
-  <div class="stars s3"></div>
 
   <nav class="navbar">
     <div class="nav-logo">SR</div>
@@ -26,174 +28,193 @@
     </ul>
   </nav>
 
+  <!-- ── Hero ── -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <span class="hero-badge">Available for Opportunities</span>
-      <p class="hero-greeting">Hi there, I'm</p>
-      <h1 class="hero-name">Swetalin<br>Rout</h1>
-      <p class="hero-role">Full Stack Developer &amp; UI/UX Designer</p>
-      <p class="hero-sub">BTech CS · AI/ML · Open Source · MERN · Python · Web3</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    <div class="hero-bg-text" aria-hidden="true">SR</div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-chip">
+          <span class="chip-dot"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="line-1">Swetalin</span>
+          <span class="line-2">Rout<em>.</em></span>
+        </h1>
+        <p class="hero-sub">BTech CS · AI/ML · Open Source<br>MERN · Python · Web3</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="orb-wrap">
+          <div class="orb-outer"></div>
+          <div class="orb-mid"></div>
+          <div class="orb-inner">SR</div>
+        </div>
+        <p class="hero-role">Full Stack Developer &amp; UI/UX Designer</p>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="avatar-wrap">
-        <div class="avatar-ring"></div>
-        <div class="avatar">SR</div>
-      </div>
-    </div>
+    <div class="hero-scroll-hint">scroll ↓</div>
   </section>
 
+  <!-- ── About ── -->
   <section class="about" id="about">
     <div class="container">
-      <div class="section-label">01 — About</div>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-icon">🎓</div>
-          <h3>Education</h3>
-          <p>BTech CS with specialisation in <strong>AI/ML</strong>. Building strong foundations in algorithms, data structures, and intelligent systems.</p>
+      <div class="section-eyebrow">01 · About</div>
+      <div class="about-layout">
+        <div class="about-heading-col">
+          <h2 class="section-heading">Who<br>I Am.</h2>
         </div>
-        <div class="about-card about-card--main">
-          <p>I'm <strong>Swetalin Rout</strong>, a passionate developer who loves crafting full-stack web applications and designing clean, intuitive user experiences.</p>
-          <p>Currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.</p>
-          <p>I believe in learning by building — always pushing the limits of what technology can do.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">🚀</div>
-          <h3>Open Source</h3>
-          <p>Active contributor under the <strong>Linux Foundation</strong> LFX Mentorship, focused on GenAI observability and distributed tracing.</p>
+        <div class="about-content-col">
+          <p class="about-lead">A passionate <strong>full-stack developer</strong> and <strong>AI/ML enthusiast</strong> who believes great software lives at the intersection of engineering and design.</p>
+          <p class="about-body">Currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability. BTech CS student specialising in AI/ML, building real-world products that people love to use.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">LFX</span>
+              <span class="stat-label">Mentee 2026</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">AI/ML</span>
+              <span class="stat-label">Specialisation</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── Skills ── -->
   <section class="skills" id="skills">
     <div class="container">
-      <div class="section-label">02 — Skills</div>
-      <h2 class="section-title">What I Work With</h2>
-      <div class="skills-categories">
-        <div class="skill-group">
-          <h3 class="skill-group-title">Frontend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">UI/UX Design</span>
+      <div class="section-eyebrow">02 · Skills</div>
+      <h2 class="section-heading">What I<br>Work With.</h2>
+      <div class="bento">
+        <div class="bento-card bento-wide bento-primary">
+          <span class="bento-label">Frontend</span>
+          <div class="bento-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">REST APIs</span>
+        <div class="bento-card bento-accent">
+          <span class="bento-label">Design</span>
+          <div class="bento-tags"><span>UI / UX</span><span>Figma</span></div>
+        </div>
+        <div class="bento-card">
+          <span class="bento-label">Backend</span>
+          <div class="bento-tags">
+            <span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Advanced</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">AI / ML</span>
-            <span class="skill-tag">Web3</span>
-            <span class="skill-tag">Open Source</span>
-          </div>
+        <div class="bento-card bento-tall bento-rose">
+          <span class="bento-label">AI / ML</span>
+          <div class="bento-icon">🤖</div>
+          <div class="bento-tags"><span>Python</span><span>Gemini AI</span><span>Observability</span></div>
+        </div>
+        <div class="bento-card">
+          <span class="bento-label">Other</span>
+          <div class="bento-tags"><span>Web3</span><span>Open Source</span><span>Git</span></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── Projects ── -->
   <section class="projects" id="projects">
     <div class="container">
-      <div class="section-label">03 — Projects</div>
-      <h2 class="section-title">What I've Built</h2>
-      <div class="projects-grid">
+      <div class="section-eyebrow">03 · Projects</div>
+      <h2 class="section-heading">What I've<br>Built.</h2>
+      <div class="projects-list">
 
-        <div class="project-card project-card--purple">
-          <div class="project-header">
-            <span class="project-icon">🧠</span>
-            <span class="project-num">01</span>
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
+          <div class="pcard-num">01</div>
+          <div class="pcard-body">
+            <div class="pcard-top">
+              <span class="pcard-icon">🧠</span>
+              <div class="pcard-tags">
+                <span>AI/ML</span><span>Gemini</span><span>React</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">MemoraX</h3>
+            <p class="pcard-desc">AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
           </div>
-          <h3>MemoraX</h3>
-          <p>AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
-          <div class="project-tags">
-            <span>AI/ML</span><span>Gemini</span><span>React</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub <span class="link-arrow">→</span></a>
-        </div>
+          <div class="pcard-arrow">↗</div>
+        </a>
 
-        <div class="project-card project-card--orange">
-          <div class="project-header">
-            <span class="project-icon">🌦️</span>
-            <span class="project-num">02</span>
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
+          <div class="pcard-num">02</div>
+          <div class="pcard-body">
+            <div class="pcard-top">
+              <span class="pcard-icon">🌦️</span>
+              <div class="pcard-tags">
+                <span>API</span><span>JavaScript</span><span>CSS</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">Weather-Aware Journal</h3>
+            <p class="pcard-desc">A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
           </div>
-          <h3>Weather-Aware Journal</h3>
-          <p>A journaling app enriched with live weather data for mood-and-context-aware diary entries.</p>
-          <div class="project-tags">
-            <span>API</span><span>JavaScript</span><span>CSS</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub <span class="link-arrow">→</span></a>
-        </div>
+          <div class="pcard-arrow">↗</div>
+        </a>
 
-        <div class="project-card project-card--teal">
-          <div class="project-header">
-            <span class="project-icon">🛒</span>
-            <span class="project-num">03</span>
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
+          <div class="pcard-num">03</div>
+          <div class="pcard-body">
+            <div class="pcard-top">
+              <span class="pcard-icon">🛒</span>
+              <div class="pcard-tags">
+                <span>MERN</span><span>MongoDB</span><span>React</span>
+              </div>
+            </div>
+            <h3 class="pcard-title">Product Store</h3>
+            <p class="pcard-desc">Full-stack MERN application with CRUD operations, authentication, and a fully responsive modern UI.</p>
           </div>
-          <h3>Product Store</h3>
-          <p>Full-stack MERN application with CRUD operations, auth, and a fully responsive modern UI.</p>
-          <div class="project-tags">
-            <span>MERN</span><span>MongoDB</span><span>React</span>
-          </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub <span class="link-arrow">→</span></a>
-        </div>
+          <div class="pcard-arrow">↗</div>
+        </a>
 
       </div>
     </div>
   </section>
 
+  <!-- ── Contact ── -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-label">04 — Contact</div>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="contact-sub">Open to collaborations, internships, and exciting projects.</p>
-      <div class="contact-grid">
-        <a href="mailto:swetalinrout2006@gmail.com" class="contact-card">
-          <div class="contact-icon-wrap">📧</div>
-          <div class="contact-info">
-            <h3>Email</h3>
-            <p>swetalinrout2006@gmail.com</p>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://github.com/swetalin-10" target="_blank" class="contact-card">
-          <div class="contact-icon-wrap">💻</div>
-          <div class="contact-info">
-            <h3>GitHub</h3>
-            <p>github.com/swetalin-10</p>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card">
-          <div class="contact-icon-wrap">🔗</div>
-          <div class="contact-info">
-            <h3>LinkedIn</h3>
-            <p>swetalin-rout-995763361</p>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
+      <div class="section-eyebrow">04 · Contact</div>
+      <div class="contact-layout">
+        <div class="contact-heading-col">
+          <h2 class="section-heading">Let's<br>Talk.</h2>
+          <p class="contact-sub">Open to collaborations,<br>internships &amp; projects.</p>
+        </div>
+        <div class="contact-links-col">
+          <a href="mailto:swetalinrout2006@gmail.com" class="clink">
+            <span class="clink-label">Email</span>
+            <span class="clink-val">swetalinrout2006@gmail.com</span>
+            <span class="clink-arrow">↗</span>
+          </a>
+          <a href="https://github.com/swetalin-10" target="_blank" class="clink">
+            <span class="clink-label">GitHub</span>
+            <span class="clink-val">github.com/swetalin-10</span>
+            <span class="clink-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="clink">
+            <span class="clink-label">LinkedIn</span>
+            <span class="clink-val">swetalin-rout-995763361</span>
+            <span class="clink-arrow">↗</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="footer-inner">
+    <div class="container footer-inner">
       <span class="footer-logo">SR</span>
-      <p>© 2026 Swetalin Rout · Built with HTML &amp; CSS</p>
+      <p>© 2026 Swetalin Rout · HTML &amp; CSS</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
     </div>
   </footer>
 
