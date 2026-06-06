@@ -6,7 +6,7 @@
   <title>Swetalin Rout | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,112 +21,186 @@
     </ul>
   </nav>
 
+  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <p class="hero-tag">Hi, I'm</p>
-      <h1 class="hero-name">Swetalin Rout</h1>
+      <span class="hero-badge">Available for Opportunities</span>
+      <p class="hero-greeting">Hi there, I'm</p>
+      <h1 class="hero-name">Swetalin<br>Rout</h1>
       <p class="hero-role">Full Stack Developer &amp; UI/UX Designer</p>
-      <p class="hero-sub">BTech CS (AI/ML) &nbsp;·&nbsp; Open Source Contributor &nbsp;·&nbsp; MERN · Python · Web3</p>
+      <p class="hero-sub">BTech CS · AI/ML · Open Source · MERN · Python · Web3</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <div class="avatar">SR</div>
+        <div class="avatar-ring"></div>
       </div>
     </div>
   </section>
 
+  <!-- About -->
   <section class="about" id="about">
     <div class="container">
-      <h2 class="section-title">About</h2>
-      <div class="about-card">
-        <p>I'm <strong>Swetalin Rout</strong>, a passionate BTech Computer Science student specialising in AI/ML. I love crafting full-stack web applications and designing clean, intuitive user experiences.</p>
-        <p>I actively contribute to open-source projects and am currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.</p>
-        <p>I believe in learning by building — always pushing the limits of what technology can do.</p>
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p>BTech Computer Science with specialisation in <strong>AI/ML</strong>. Building strong foundations in algorithms, data structures, and intelligent systems.</p>
+        </div>
+        <div class="about-card about-card--main">
+          <p>I'm <strong>Swetalin Rout</strong>, a passionate developer who loves crafting full-stack web applications and designing clean, intuitive user experiences.</p>
+          <p>Currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.</p>
+          <p>I believe in learning by building — always pushing the limits of what technology can do.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🚀</div>
+          <h3>Open Source</h3>
+          <p>Active contributor to the <strong>Linux Foundation</strong> under the LFX Mentorship programme, focused on GenAI observability tools.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Skills -->
   <section class="skills" id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">React</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">Express</div>
-        <div class="skill-card">MongoDB</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">AI / ML</div>
-        <div class="skill-card">Web3</div>
-        <div class="skill-card">UI/UX Design</div>
-        <div class="skill-card">Open Source</div>
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-categories">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Advanced</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">AI / ML</span>
+            <span class="skill-tag">Web3</span>
+            <span class="skill-tag">Open Source</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Projects -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">What I've Built</h2>
       <div class="projects-grid">
 
-        <div class="project-card">
-          <div class="project-icon">🧠</div>
+        <div class="project-card project-card--purple">
+          <div class="project-header">
+            <span class="project-icon">🧠</span>
+            <span class="project-num">01</span>
+          </div>
           <h3>MemoraX</h3>
           <p>AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
           <div class="project-tags">
             <span>AI/ML</span><span>Gemini</span><span>React</span>
           </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">
+            View on GitHub <span class="link-arrow">→</span>
+          </a>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon">🌦️</div>
+        <div class="project-card project-card--orange">
+          <div class="project-header">
+            <span class="project-icon">🌦️</span>
+            <span class="project-num">02</span>
+          </div>
           <h3>Weather-Aware Journal</h3>
           <p>A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
           <div class="project-tags">
             <span>API</span><span>JavaScript</span><span>CSS</span>
           </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">
+            View on GitHub <span class="link-arrow">→</span>
+          </a>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon">🛒</div>
+        <div class="project-card project-card--teal">
+          <div class="project-header">
+            <span class="project-icon">🛒</span>
+            <span class="project-num">03</span>
+          </div>
           <h3>Product Store</h3>
           <p>Full-stack MERN application with complete CRUD operations, auth, and a fully responsive modern UI.</p>
           <div class="project-tags">
             <span>MERN</span><span>MongoDB</span><span>React</span>
           </div>
-          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">
+            View on GitHub <span class="link-arrow">→</span>
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-sub">Let's connect and build something amazing together!</p>
-      <div class="contact-links">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Open to collaborations, internships, and exciting projects.</p>
+      <div class="contact-grid">
         <a href="mailto:swetalinrout2006@gmail.com" class="contact-card">
-          <span class="contact-icon">📧</span>
-          <p>swetalinrout2006@gmail.com</p>
+          <div class="contact-icon-wrap">📧</div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>swetalinrout2006@gmail.com</p>
+          </div>
+          <span class="contact-arrow">→</span>
         </a>
         <a href="https://github.com/swetalin-10" target="_blank" class="contact-card">
-          <span class="contact-icon">💻</span>
-          <p>github.com/swetalin-10</p>
+          <div class="contact-icon-wrap">💻</div>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <p>github.com/swetalin-10</p>
+          </div>
+          <span class="contact-arrow">→</span>
         </a>
         <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card">
-          <span class="contact-icon">🔗</span>
-          <p>LinkedIn Profile</p>
+          <div class="contact-icon-wrap">🔗</div>
+          <div class="contact-info">
+            <h3>LinkedIn</h3>
+            <p>swetalin-rout-995763361</p>
+          </div>
+          <span class="contact-arrow">→</span>
         </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Swetalin Rout · Built with HTML &amp; CSS</p>
+    <div class="footer-inner">
+      <span class="footer-logo">SR</span>
+      <p>© 2026 Swetalin Rout · Built with HTML &amp; CSS</p>
+    </div>
   </footer>
 
 </body>
