@@ -126,6 +126,42 @@ body {
   background-size: 36px 36px, 100% 100%, 100% 100%, 100% 100%;
 }
 
+/* ── Hero Aurora Blobs ── */
+.hero-blob {
+  position: absolute; border-radius: 50%;
+  filter: blur(90px); pointer-events: none; z-index: 0;
+}
+.b1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(129,140,248,0.28), transparent 70%);
+  top: -20%; left: -12%;
+  animation: blobA 22s ease-in-out infinite alternate;
+}
+.b2 {
+  width: 580px; height: 580px;
+  background: radial-gradient(circle, rgba(251,146,60,0.22), transparent 70%);
+  bottom: -15%; right: -8%;
+  animation: blobB 28s ease-in-out infinite alternate;
+}
+.b3 {
+  width: 480px; height: 480px;
+  background: radial-gradient(circle, rgba(244,114,182,0.18), transparent 70%);
+  top: 30%; left: 38%;
+  animation: blobC 18s ease-in-out infinite alternate;
+}
+@keyframes blobA {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(260px, 180px) scale(1.15); }
+}
+@keyframes blobB {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-220px, -160px) scale(1.1); }
+}
+@keyframes blobC {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-140px, 120px) scale(1.2); }
+}
+
 /* Giant ghost text watermark */
 .hero-bg-text {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
@@ -282,6 +318,23 @@ body {
 @keyframes typeIn { to { max-width: 380px; } }
 @keyframes blinkCursor { 0%,100% { border-color: var(--accent); } 50% { border-color: transparent; } }
 
+.lfx-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-top: 1rem;
+  background: rgba(129,140,248,0.1);
+  border: 1px solid rgba(129,140,248,0.3);
+  color: var(--primary);
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 0.42rem 1rem; border-radius: 50px;
+  white-space: nowrap;
+  animation: fadeUp 0.7s ease 4.2s both;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.lfx-badge:hover {
+  background: rgba(129,140,248,0.18);
+  box-shadow: 0 0 16px rgba(129,140,248,0.25);
+}
+
 .hero-scroll-hint {
   position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
   font-size: 0.7rem; color: var(--muted); letter-spacing: 3px; text-transform: uppercase;
@@ -314,7 +367,8 @@ body {
 .about {
   padding: 9rem 0;
   background:
-    radial-gradient(ellipse at 90% 50%, rgba(251,146,60,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 500px at 92% 50%, rgba(251,146,60,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at 5% 80%, rgba(129,140,248,0.1) 0%, transparent 60%),
     var(--bg2);
   position: relative; z-index: 1; border-top: 1px solid var(--border);
 }
@@ -344,7 +398,8 @@ body {
 .skills {
   padding: 9rem 0; position: relative; z-index: 1; border-top: 1px solid var(--border);
   background:
-    radial-gradient(ellipse at 10% 60%, rgba(129,140,248,0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 650px 500px at 8% 55%, rgba(129,140,248,0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 350px at 90% 20%, rgba(52,211,153,0.09) 0%, transparent 60%),
     var(--bg);
 }
 
@@ -417,7 +472,8 @@ body {
 .projects {
   padding: 9rem 0; position: relative; z-index: 1; border-top: 1px solid var(--border);
   background:
-    radial-gradient(ellipse at 85% 30%, rgba(244,114,182,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 600px 450px at 88% 25%, rgba(244,114,182,0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 400px at 10% 75%, rgba(251,146,60,0.09) 0%, transparent 60%),
     var(--bg2);
 }
 
@@ -476,7 +532,8 @@ body {
 .contact {
   padding: 9rem 0; position: relative; z-index: 1; border-top: 1px solid var(--border);
   background:
-    radial-gradient(ellipse at 20% 70%, rgba(129,140,248,0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 650px 500px at 18% 65%, rgba(129,140,248,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 450px 350px at 85% 20%, rgba(244,114,182,0.1) 0%, transparent 60%),
     var(--bg);
 }
 
