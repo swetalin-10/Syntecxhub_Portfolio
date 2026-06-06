@@ -6,244 +6,128 @@
   <title>Swetalin Rout | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <canvas id="starfield"></canvas>
 
   <nav class="navbar">
     <div class="nav-logo">SR</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="hero-label">Full Stack Developer &amp; UI/UX Designer</p>
-      <h1 class="hero-name">SWETALIN<br>ROUT</h1>
-      <p class="hero-sub">BTech CS · AI/ML · Open Source · MERN · Python · Web3</p>
-      <div class="hero-cta">
-        <a href="#work" class="btn">View Work</a>
-        <a href="#contact" class="btn btn-ghost">Contact</a>
-      </div>
-    </div>
-    <div class="hero-globe">
-      <canvas id="globe-canvas"></canvas>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="section-inner">
-      <h2 class="section-heading reveal">ABOUT</h2>
-      <div class="about-body reveal">
-        <p class="about-big">Applying a cross-disciplinary expertise in crafting and executing full-stack applications, AI-driven products, and intuitive user experiences.</p>
-        <p class="about-detail">I'm <strong>Swetalin Rout</strong> — currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability. I believe in learning by building, always pushing the limits of what technology can do.</p>
+    <div class="hero-content">
+      <p class="hero-tag">Hi, I'm</p>
+      <h1 class="hero-name">Swetalin Rout</h1>
+      <p class="hero-role">Full Stack Developer &amp; UI/UX Designer</p>
+      <p class="hero-sub">BTech CS (AI/ML) &nbsp;·&nbsp; Open Source Contributor &nbsp;·&nbsp; MERN · Python · Web3</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
     </div>
   </section>
 
-  <section id="expertise">
-    <div class="section-inner">
-      <h2 class="section-heading reveal">EXPERTISE</h2>
-      <div class="marquee-track reveal">
-        <div class="marquee">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>AI&nbsp;/&nbsp;ML</span><span>Web3</span><span>UI&nbsp;/&nbsp;UX</span><span>Open Source</span>
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>AI&nbsp;/&nbsp;ML</span><span>Web3</span><span>UI&nbsp;/&nbsp;UX</span><span>Open Source</span>
-        </div>
-      </div>
-      <div class="expertise-list">
-        <div class="expertise-item reveal">
-          <span class="e-num">01</span>
-          <div class="e-info">
-            <h3>Full Stack Development</h3>
-            <p>MERN · REST APIs · Auth · Databases</p>
-          </div>
-        </div>
-        <div class="expertise-item reveal">
-          <span class="e-num">02</span>
-          <div class="e-info">
-            <h3>AI / ML Engineering</h3>
-            <p>Python · Gemini AI · Model Integration · Observability</p>
-          </div>
-        </div>
-        <div class="expertise-item reveal">
-          <span class="e-num">03</span>
-          <div class="e-info">
-            <h3>UI / UX Design</h3>
-            <p>Design Systems · Figma · Responsive · Animations</p>
-          </div>
-        </div>
-        <div class="expertise-item reveal">
-          <span class="e-num">04</span>
-          <div class="e-info">
-            <h3>Open Source</h3>
-            <p>Linux Foundation · LFX Mentorship · GenAI Observability</p>
-          </div>
-        </div>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-card">
+        <p>I'm <strong>Swetalin Rout</strong>, a passionate BTech Computer Science student specialising in AI/ML. I love crafting full-stack web applications and designing clean, intuitive user experiences.</p>
+        <p>I actively contribute to open-source projects and am currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.</p>
+        <p>I believe in learning by building — always pushing the limits of what technology can do.</p>
       </div>
     </div>
   </section>
 
-  <section id="work">
-    <div class="section-inner">
-      <h2 class="section-heading reveal">WORK</h2>
-      <div class="projects-list">
-        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
-          <span class="p-num">01</span>
-          <div class="p-info">
-            <h3>MemoraX</h3>
-            <p>AI-powered study platform — flashcards &amp; quizzes via Gemini AI</p>
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Express</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">AI / ML</div>
+        <div class="skill-card">Web3</div>
+        <div class="skill-card">UI/UX Design</div>
+        <div class="skill-card">Open Source</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon">🧠</div>
+          <h3>MemoraX</h3>
+          <p>AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
+          <div class="project-tags">
+            <span>AI/ML</span><span>Gemini</span><span>React</span>
           </div>
-          <div class="p-tags">AI/ML · Gemini · React</div>
-          <span class="p-arrow">↗</span>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🌦️</div>
+          <h3>Weather-Aware Journal</h3>
+          <p>A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
+          <div class="project-tags">
+            <span>API</span><span>JavaScript</span><span>CSS</span>
+          </div>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🛒</div>
+          <h3>Product Store</h3>
+          <p>Full-stack MERN application with complete CRUD operations, auth, and a fully responsive modern UI.</p>
+          <div class="project-tags">
+            <span>MERN</span><span>MongoDB</span><span>React</span>
+          </div>
+          <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Let's connect and build something amazing together!</p>
+      <div class="contact-links">
+        <a href="mailto:swetalinrout2006@gmail.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <p>swetalinrout2006@gmail.com</p>
         </a>
-        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
-          <span class="p-num">02</span>
-          <div class="p-info">
-            <h3>Weather-Aware Journal</h3>
-            <p>Journaling app enriched with live weather data integration</p>
-          </div>
-          <div class="p-tags">API · JavaScript · CSS</div>
-          <span class="p-arrow">↗</span>
+        <a href="https://github.com/swetalin-10" target="_blank" class="contact-card">
+          <span class="contact-icon">💻</span>
+          <p>github.com/swetalin-10</p>
         </a>
-        <a href="https://github.com/swetalin-10" target="_blank" class="project-item reveal">
-          <span class="p-num">03</span>
-          <div class="p-info">
-            <h3>Product Store</h3>
-            <p>Full-stack MERN app with CRUD operations, auth &amp; responsive UI</p>
-          </div>
-          <div class="p-tags">MERN · MongoDB · React</div>
-          <span class="p-arrow">↗</span>
+        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card">
+          <span class="contact-icon">🔗</span>
+          <p>LinkedIn Profile</p>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-inner">
-      <h2 class="section-heading reveal">LET'S<br>TALK</h2>
-      <div class="contact-body reveal">
-        <p class="contact-big">Have a project in mind?<br>Let's build something great together.</p>
-        <div class="contact-links">
-          <a href="mailto:swetalinrout2006@gmail.com">swetalinrout2006@gmail.com ↗</a>
-          <a href="https://github.com/swetalin-10" target="_blank">github.com/swetalin-10 ↗</a>
-          <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank">LinkedIn Profile ↗</a>
-        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Swetalin Rout</p>
+    <p>© 2026 Swetalin Rout · Built with HTML &amp; CSS</p>
   </footer>
 
-  <script>
-    // ── Starfield ──
-    const sf = document.getElementById('starfield');
-    const sctx = sf.getContext('2d');
-    let stars = [];
-
-    function resizeSF() {
-      sf.width = window.innerWidth;
-      sf.height = window.innerHeight;
-      stars = Array.from({ length: 180 }, () => ({
-        x: Math.random() * sf.width,
-        y: Math.random() * sf.height,
-        r: Math.random() * 1.2 + 0.2,
-        alpha: Math.random() * 0.6 + 0.1,
-        speed: Math.random() * 0.12 + 0.02
-      }));
-    }
-    window.addEventListener('resize', resizeSF);
-    resizeSF();
-
-    function drawStars() {
-      sctx.clearRect(0, 0, sf.width, sf.height);
-      stars.forEach(s => {
-        s.y -= s.speed;
-        if (s.y < 0) { s.y = sf.height; s.x = Math.random() * sf.width; }
-        sctx.beginPath();
-        sctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        sctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
-        sctx.fill();
-      });
-      requestAnimationFrame(drawStars);
-    }
-    drawStars();
-
-    // ── 3D Particle Globe ──
-    const gc = document.getElementById('globe-canvas');
-    const gctx = gc.getContext('2d');
-    let globePoints = [];
-    let rotY = 0;
-    const TILT = 0.3;
-
-    function resizeGlobe() {
-      const size = Math.min(window.innerWidth * 0.42, 480);
-      gc.width = size;
-      gc.height = size;
-    }
-    window.addEventListener('resize', resizeGlobe);
-    resizeGlobe();
-
-    // Fibonacci sphere for even distribution
-    (function generateGlobe() {
-      const n = 720;
-      const phi = Math.PI * (3 - Math.sqrt(5));
-      for (let i = 0; i < n; i++) {
-        const y = 1 - (i / (n - 1)) * 2;
-        const r = Math.sqrt(1 - y * y);
-        const theta = phi * i;
-        globePoints.push({ x: Math.cos(theta) * r, y, z: Math.sin(theta) * r });
-      }
-    })();
-
-    function projectGlobe(p) {
-      const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
-      const x1 = p.x * cosY + p.z * sinY;
-      const z1 = -p.x * sinY + p.z * cosY;
-      const cosX = Math.cos(TILT), sinX = Math.sin(TILT);
-      const y2 = p.y * cosX - z1 * sinX;
-      const z2 = p.y * sinX + z1 * cosX;
-      const fov = 2.8, scale = fov / (fov + z2 * 0.6 + 0.5);
-      const cx = gc.width / 2, cy = gc.height / 2;
-      const radius = gc.width * 0.36;
-      return { sx: cx + x1 * radius * scale, sy: cy + y2 * radius * scale, z: z2 };
-    }
-
-    function drawGlobe() {
-      gctx.clearRect(0, 0, gc.width, gc.height);
-      rotY += 0.0045;
-      const pts = globePoints.map(p => ({ ...projectGlobe(p) })).sort((a, b) => a.z - b.z);
-      pts.forEach(p => {
-        const t = (p.z + 1) / 2;
-        const size = t * 2.2 + 0.2;
-        const alpha = t * 0.85 + 0.08;
-        gctx.beginPath();
-        gctx.arc(p.sx, p.sy, size, 0, Math.PI * 2);
-        gctx.fillStyle = `rgba(240,165,30,${alpha})`;
-        gctx.fill();
-      });
-      requestAnimationFrame(drawGlobe);
-    }
-    drawGlobe();
-
-    // ── Scroll reveal ──
-    const revealObs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
-
-    // ── Navbar scroll ──
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
-    });
-  </script>
 </body>
 </html>
