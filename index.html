@@ -11,13 +11,15 @@
 </head>
 <body>
 
-  <!-- CSS-only grain texture overlay -->
+  <!-- grain overlay -->
   <div class="grain"></div>
 
-  <!-- CSS star particles -->
+  <!-- star layers -->
   <div class="stars s1"></div>
   <div class="stars s2"></div>
+  <div class="stars s3"></div>
 
+  <!-- ── Navbar ── -->
   <nav class="navbar">
     <div class="nav-logo">SR</div>
     <ul class="nav-links">
@@ -33,7 +35,10 @@
     <div class="hero-blob b1"></div>
     <div class="hero-blob b2"></div>
     <div class="hero-blob b3"></div>
+    <div class="hero-blob b4"></div>
+    <div class="hero-ring"></div>
     <div class="hero-bg-text" aria-hidden="true">SR</div>
+
     <div class="hero-inner">
       <div class="hero-left">
         <div class="hero-chip">
@@ -50,8 +55,10 @@
           <a href="#contact" class="btn btn-ghost">Get In Touch</a>
         </div>
       </div>
+
       <div class="hero-right">
         <div class="orb-wrap">
+          <div class="orb-glow"></div>
           <div class="orb-outer"></div>
           <div class="orb-mid"></div>
           <div class="orb-inner">SR</div>
@@ -60,8 +67,40 @@
         <span class="lfx-badge">🐧 LFX Mentee &middot; Linux Foundation 2026</span>
       </div>
     </div>
+
     <div class="hero-scroll-hint">scroll ↓</div>
   </section>
+
+  <!-- ── Marquee Strip ── -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>React</span><span class="dot">·</span>
+      <span>AI / ML</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>Node.js</span><span class="dot">·</span>
+      <span>Gemini AI</span><span class="dot">·</span>
+      <span>LFX Mentee</span><span class="dot">·</span>
+      <span>Web3</span><span class="dot">·</span>
+      <span>Figma</span><span class="dot">·</span>
+      <span>Open Source</span><span class="dot">·</span>
+      <span>MongoDB</span><span class="dot">·</span>
+      <span>CSS</span><span class="dot">·</span>
+      <span>Linux Foundation</span><span class="dot">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>React</span><span class="dot">·</span>
+      <span>AI / ML</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>Node.js</span><span class="dot">·</span>
+      <span>Gemini AI</span><span class="dot">·</span>
+      <span>LFX Mentee</span><span class="dot">·</span>
+      <span>Web3</span><span class="dot">·</span>
+      <span>Figma</span><span class="dot">·</span>
+      <span>Open Source</span><span class="dot">·</span>
+      <span>MongoDB</span><span class="dot">·</span>
+      <span>CSS</span><span class="dot">·</span>
+      <span>Linux Foundation</span><span class="dot">·</span>
+    </div>
+  </div>
 
   <!-- ── About ── -->
   <section class="about" id="about">
@@ -133,51 +172,49 @@
     <div class="container">
       <div class="section-eyebrow">03 · Projects</div>
       <h2 class="section-heading">What I've<br>Built.</h2>
-      <div class="projects-list">
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
-          <div class="pcard-num">01</div>
-          <div class="pcard-body">
-            <div class="pcard-top">
-              <span class="pcard-icon">🧠</span>
-              <div class="pcard-tags">
-                <span>AI/ML</span><span>Gemini</span><span>React</span>
-              </div>
-            </div>
-            <h3 class="pcard-title">MemoraX</h3>
-            <p class="pcard-desc">AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
+      <div class="projects-grid">
+
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-indigo">
+          <div class="pcard-num-bg" aria-hidden="true">01</div>
+          <div class="pcard-top-row">
+            <span class="pcard-num">01</span>
+            <span class="pcard-arrow">↗</span>
           </div>
-          <div class="pcard-arrow">↗</div>
+          <span class="pcard-icon">🧠</span>
+          <h3 class="pcard-title">MemoraX</h3>
+          <p class="pcard-desc">AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
+          <div class="pcard-tags">
+            <span>AI/ML</span><span>Gemini</span><span>React</span>
+          </div>
         </a>
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
-          <div class="pcard-num">02</div>
-          <div class="pcard-body">
-            <div class="pcard-top">
-              <span class="pcard-icon">🌦️</span>
-              <div class="pcard-tags">
-                <span>API</span><span>JavaScript</span><span>CSS</span>
-              </div>
-            </div>
-            <h3 class="pcard-title">Weather-Aware Journal</h3>
-            <p class="pcard-desc">A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-orange">
+          <div class="pcard-num-bg" aria-hidden="true">02</div>
+          <div class="pcard-top-row">
+            <span class="pcard-num">02</span>
+            <span class="pcard-arrow">↗</span>
           </div>
-          <div class="pcard-arrow">↗</div>
+          <span class="pcard-icon">🌦️</span>
+          <h3 class="pcard-title">Weather-Aware Journal</h3>
+          <p class="pcard-desc">A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
+          <div class="pcard-tags">
+            <span>API</span><span>JavaScript</span><span>CSS</span>
+          </div>
         </a>
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard">
-          <div class="pcard-num">03</div>
-          <div class="pcard-body">
-            <div class="pcard-top">
-              <span class="pcard-icon">🛒</span>
-              <div class="pcard-tags">
-                <span>MERN</span><span>MongoDB</span><span>React</span>
-              </div>
-            </div>
-            <h3 class="pcard-title">Product Store</h3>
-            <p class="pcard-desc">Full-stack MERN application with CRUD operations, authentication, and a fully responsive modern UI.</p>
+        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-rose">
+          <div class="pcard-num-bg" aria-hidden="true">03</div>
+          <div class="pcard-top-row">
+            <span class="pcard-num">03</span>
+            <span class="pcard-arrow">↗</span>
           </div>
-          <div class="pcard-arrow">↗</div>
+          <span class="pcard-icon">🛒</span>
+          <h3 class="pcard-title">Product Store</h3>
+          <p class="pcard-desc">Full-stack MERN application with CRUD operations, authentication, and a fully responsive modern UI.</p>
+          <div class="pcard-tags">
+            <span>MERN</span><span>MongoDB</span><span>React</span>
+          </div>
         </a>
 
       </div>
