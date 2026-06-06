@@ -11,6 +11,8 @@
 </head>
 <body>
 
+  <canvas id="particles-canvas"></canvas>
+
   <div class="bg-blob blob-1"></div>
   <div class="bg-blob blob-2"></div>
   <div class="bg-blob blob-3"></div>
@@ -38,7 +40,10 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-avatar">SR</div>
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="hero-avatar">SR</div>
+      </div>
     </div>
   </section>
 
@@ -78,7 +83,7 @@
       <h2 class="section-title reveal">Experience</h2>
       <div class="timeline">
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
             <span class="timeline-date">2026 · Present</span>
@@ -88,7 +93,7 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
             <span class="timeline-date">2024 · Present</span>
@@ -98,7 +103,7 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
             <span class="timeline-date">2023 · Ongoing</span>
@@ -117,7 +122,7 @@
       <h2 class="section-title reveal">Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card glass-card reveal-stagger">
+        <div class="project-card glass-card reveal-stagger tilt-card">
           <div class="project-icon">🧠</div>
           <h3>MemoraX</h3>
           <p>AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
@@ -127,7 +132,7 @@
           <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
         </div>
 
-        <div class="project-card glass-card reveal-stagger">
+        <div class="project-card glass-card reveal-stagger tilt-card">
           <div class="project-icon">🌦️</div>
           <h3>Weather-Aware Journal</h3>
           <p>A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
@@ -137,7 +142,7 @@
           <a href="https://github.com/swetalin-10" target="_blank" class="project-link">View on GitHub →</a>
         </div>
 
-        <div class="project-card glass-card reveal-stagger">
+        <div class="project-card glass-card reveal-stagger tilt-card">
           <div class="project-icon">🛒</div>
           <h3>Product Store</h3>
           <p>Full-stack MERN application with complete CRUD operations, auth, and a fully responsive modern UI.</p>
@@ -156,15 +161,15 @@
       <h2 class="section-title reveal">Get In Touch</h2>
       <p class="contact-sub reveal">Let's connect and build something amazing together!</p>
       <div class="contact-links">
-        <a href="mailto:swetalinrout2006@gmail.com" class="contact-card glass-card reveal-stagger">
+        <a href="mailto:swetalinrout2006@gmail.com" class="contact-card glass-card reveal-stagger tilt-card">
           <span>📧</span>
           <p>swetalinrout2006@gmail.com</p>
         </a>
-        <a href="https://github.com/swetalin-10" target="_blank" class="contact-card glass-card reveal-stagger">
+        <a href="https://github.com/swetalin-10" target="_blank" class="contact-card glass-card reveal-stagger tilt-card">
           <span>💻</span>
           <p>github.com/swetalin-10</p>
         </a>
-        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card glass-card reveal-stagger">
+        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="contact-card glass-card reveal-stagger tilt-card">
           <span>🔗</span>
           <p>LinkedIn Profile</p>
         </a>
@@ -177,11 +182,63 @@
   </footer>
 
   <script>
-    // Typing animation
+    // ── Canvas particle network ──
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', () => { resize(); initParticles(); });
+    resize();
+
+    function initParticles() {
+      particles = Array.from({ length: 70 }, () => ({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.45,
+        vy: (Math.random() - 0.5) * 0.45,
+        r: Math.random() * 1.8 + 0.4,
+        alpha: Math.random() * 0.4 + 0.1,
+        color: Math.random() > 0.5 ? '123,111,255' : '0,212,255'
+      }));
+    }
+    initParticles();
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > W) p.vx *= -1;
+        if (p.y < 0 || p.y > H) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${p.color},${p.alpha})`;
+        ctx.fill();
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p.x - p2.x, dy = p.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 130) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(123,111,255,${0.18 * (1 - dist / 130)})`;
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    // ── Typing animation ──
     const roles = ['Full Stack Developer', 'UI/UX Designer', 'AI/ML Enthusiast', 'Open Source Contributor'];
     let roleIndex = 0, charIndex = 0, isDeleting = false;
     const typedEl = document.getElementById('typed-text');
-
     function type() {
       const current = roles[roleIndex];
       typedEl.textContent = isDeleting ? current.slice(0, charIndex--) : current.slice(0, charIndex++);
@@ -192,19 +249,49 @@
     }
     type();
 
-    // Staggered index assignment
+    // ── Navbar scroll effect ──
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── Stagger indices ──
     document.querySelectorAll('.skills-grid .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
     document.querySelectorAll('.projects-grid .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
     document.querySelectorAll('.contact-links .reveal-stagger').forEach((el, i) => el.style.setProperty('--i', i));
 
-    // Scroll reveal via IntersectionObserver
+    // ── Scroll reveal ──
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
     }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .reveal-stagger, .reveal-left').forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
+    // ── 3D tilt on cards ──
+    document.querySelectorAll('.tilt-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) translateZ(12px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.transition = 'transform 0.5s ease';
+        setTimeout(() => card.style.transition = '', 500);
+      });
+      card.addEventListener('mouseenter', () => card.style.transition = 'transform 0.1s ease');
+    });
+
+    // ── Button ripple ──
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        const r = this.getBoundingClientRect();
+        ripple.style.cssText = `left:${e.clientX - r.left}px;top:${e.clientY - r.top}px`;
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 650);
+      });
+    });
   </script>
 </body>
 </html>
