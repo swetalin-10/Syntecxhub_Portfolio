@@ -3,259 +3,411 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swetalin Rout | Portfolio</title>
+  <title>Swetalin Rout — Frontend Developer & UI/UX Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- grain overlay -->
   <div class="grain"></div>
-
-  <!-- star layers -->
   <div class="stars s1"></div>
   <div class="stars s2"></div>
   <div class="stars s3"></div>
 
-  <!-- ── Navbar ── -->
+  <!-- ══ NAV ══ -->
   <nav class="navbar">
-    <div class="nav-logo">SR</div>
+    <a class="nav-logo" href="#home">SR<span class="logo-dot">.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="#contact" class="nav-hire">Hire Me ↗</a>
   </nav>
 
-  <!-- ── Hero ── -->
+  <!-- ══ HERO ══ -->
   <section class="hero" id="home">
-    <div class="hero-blob b1"></div>
-    <div class="hero-blob b2"></div>
-    <div class="hero-blob b3"></div>
-    <div class="hero-blob b4"></div>
-    <div class="hero-ring"></div>
+    <div class="hero-blob hb1"></div>
+    <div class="hero-blob hb2"></div>
+    <div class="hero-blob hb3"></div>
+    <div class="hero-blob hb4"></div>
+    <div class="hero-grid-overlay"></div>
     <div class="hero-bg-text" aria-hidden="true">SR</div>
+
+    <!-- floating geometric shapes -->
+    <div class="geo g1"></div>
+    <div class="geo g2"></div>
+    <div class="geo g3"></div>
 
     <div class="hero-inner">
       <div class="hero-left">
-        <div class="hero-chip">
-          <span class="chip-dot"></span>
+
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
           Available for Opportunities
         </div>
+
         <h1 class="hero-name">
-          <span class="line-1">Swetalin</span>
-          <span class="line-2">Rout<em>.</em></span>
+          <span class="hn-line hn-1">Swetalin</span>
+          <span class="hn-line hn-2">Rout<em>.</em></span>
         </h1>
-        <p class="hero-sub">BTech CS · AI/ML · Open Source<br>MERN · Python · Web3</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+
+        <p class="hero-role">
+          <span class="hr-word">Frontend</span>
+          <span class="hr-word">Developer</span>
+          <span class="hr-sym">&amp;</span>
+          <span class="hr-word">UI/UX</span>
+          <span class="hr-word">Designer</span><span class="cursor"></span>
+        </p>
+        <span class="lfx-badge">🐧 LFX Mentee · Linux Foundation 2026</span>
+
+        <p class="hero-tagline">
+          BTech CS · crafting interfaces at the intersection of <strong>performance</strong> and <strong>beautiful design</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <span class="btn-icon">↓</span>
+          </a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
         </div>
+
       </div>
 
       <div class="hero-right">
-        <div class="orb-wrap">
-          <div class="orb-glow"></div>
-          <div class="orb-outer"></div>
-          <div class="orb-mid"></div>
-          <div class="orb-inner">SR</div>
+        <div class="orb-scene">
+          <div class="orb-ambient"></div>
+          <div class="orb-ring r1"></div>
+          <div class="orb-ring r2"></div>
+          <div class="orb-ring r3"></div>
+          <div class="orb-body">
+            <div class="orb-core"></div>
+            SR
+          </div>
+
+          <!-- floating mini-cards around orb -->
+          <div class="orb-float-card ofc-1">
+            <span class="ofc-icon">🐧</span>
+            <div class="ofc-text">
+              <span class="ofc-title">LFX Mentee</span>
+              <span class="ofc-sub">Linux Foundation</span>
+            </div>
+          </div>
+          <div class="orb-float-card ofc-2">
+            <span class="ofc-icon">🤖</span>
+            <div class="ofc-text">
+              <span class="ofc-title">AI / ML</span>
+              <span class="ofc-sub">Gemini AI</span>
+            </div>
+          </div>
+          <div class="orb-float-card ofc-3">
+            <span class="ofc-icon">💻</span>
+            <div class="ofc-text">
+              <span class="ofc-title">Frontend</span>
+              <span class="ofc-sub">React · CSS · JS</span>
+            </div>
+          </div>
         </div>
-        <p class="hero-role">Full Stack Developer &amp; UI/UX Designer</p>
-        <span class="lfx-badge">🐧 LFX Mentee &middot; Linux Foundation 2026</span>
       </div>
     </div>
 
-    <div class="hero-scroll-hint">scroll ↓</div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
+    </div>
   </section>
 
-  <!-- ── Marquee Strip ── -->
-  <div class="marquee-strip" aria-hidden="true">
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>React</span><span class="dot">·</span>
-      <span>AI / ML</span><span class="dot">·</span>
-      <span>Python</span><span class="dot">·</span>
-      <span>Node.js</span><span class="dot">·</span>
-      <span>Gemini AI</span><span class="dot">·</span>
-      <span>LFX Mentee</span><span class="dot">·</span>
-      <span>Web3</span><span class="dot">·</span>
-      <span>Figma</span><span class="dot">·</span>
-      <span>Open Source</span><span class="dot">·</span>
-      <span>MongoDB</span><span class="dot">·</span>
-      <span>CSS</span><span class="dot">·</span>
-      <span>Linux Foundation</span><span class="dot">·</span>
-      <!-- duplicate for seamless loop -->
-      <span>React</span><span class="dot">·</span>
-      <span>AI / ML</span><span class="dot">·</span>
-      <span>Python</span><span class="dot">·</span>
-      <span>Node.js</span><span class="dot">·</span>
-      <span>Gemini AI</span><span class="dot">·</span>
-      <span>LFX Mentee</span><span class="dot">·</span>
-      <span>Web3</span><span class="dot">·</span>
-      <span>Figma</span><span class="dot">·</span>
-      <span>Open Source</span><span class="dot">·</span>
-      <span>MongoDB</span><span class="dot">·</span>
-      <span>CSS</span><span class="dot">·</span>
-      <span>Linux Foundation</span><span class="dot">·</span>
+      <span>React</span><span class="sep">◆</span>
+      <span>Node.js</span><span class="sep">◆</span>
+      <span>Python</span><span class="sep">◆</span>
+      <span>AI / ML</span><span class="sep">◆</span>
+      <span>Gemini AI</span><span class="sep">◆</span>
+      <span>MongoDB</span><span class="sep">◆</span>
+      <span>LFX Mentee</span><span class="sep">◆</span>
+      <span>Web3</span><span class="sep">◆</span>
+      <span>Open Source</span><span class="sep">◆</span>
+      <span>Figma</span><span class="sep">◆</span>
+      <span>Linux Foundation</span><span class="sep">◆</span>
+      <span>Frontend Dev</span><span class="sep">◆</span>
+      <span>React</span><span class="sep">◆</span>
+      <span>Node.js</span><span class="sep">◆</span>
+      <span>Python</span><span class="sep">◆</span>
+      <span>AI / ML</span><span class="sep">◆</span>
+      <span>Gemini AI</span><span class="sep">◆</span>
+      <span>MongoDB</span><span class="sep">◆</span>
+      <span>LFX Mentee</span><span class="sep">◆</span>
+      <span>Web3</span><span class="sep">◆</span>
+      <span>Open Source</span><span class="sep">◆</span>
+      <span>Figma</span><span class="sep">◆</span>
+      <span>Linux Foundation</span><span class="sep">◆</span>
+      <span>Frontend Dev</span><span class="sep">◆</span>
     </div>
   </div>
 
-  <!-- ── About ── -->
-  <section class="about" id="about">
+  <!-- ══ ABOUT ══ -->
+  <section class="section about" id="about">
+    <div class="about-bg-num" aria-hidden="true">01</div>
     <div class="container">
-      <div class="section-eyebrow">01 · About</div>
-      <div class="about-layout">
-        <div class="about-heading-col">
+      <p class="eyebrow">01 · About</p>
+      <div class="about-grid">
+
+        <div class="about-left">
           <h2 class="section-heading">Who<br>I Am.</h2>
+          <div class="about-quote">
+            <div class="quote-mark">"</div>
+            <p>Passionate about building things that are <em>technically precise</em> and <em>beautifully designed</em>.</p>
+          </div>
         </div>
-        <div class="about-content-col">
-          <p class="about-lead">A passionate <strong>full-stack developer</strong> and <strong>AI/ML enthusiast</strong> who believes great software lives at the intersection of engineering and design.</p>
-          <p class="about-body">Currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability. BTech CS student specialising in AI/ML, building real-world products that people love to use.</p>
+
+        <div class="about-right">
+          <p class="about-text">
+            I'm a frontend developer and AI/ML enthusiast from Bhubaneswar, India. Currently part of the <strong>LFX Mentorship 2026</strong> programme with the Linux Foundation, working on distributed tracing and GenAI observability.
+          </p>
+          <p class="about-text">
+            BTech CS student obsessed with building interfaces that are fast, accessible, and visually refined — where engineering precision meets beautiful design.
+          </p>
+
           <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">3+</span>
-              <span class="stat-label">Projects Built</span>
+            <div class="stat-item">
+              <span class="stat-val">3+</span>
+              <span class="stat-lbl">Projects Built</span>
             </div>
-            <div class="stat">
-              <span class="stat-num">LFX</span>
-              <span class="stat-label">Mentee 2026</span>
+            <div class="stat-item">
+              <span class="stat-val">LFX</span>
+              <span class="stat-lbl">Mentee 2026</span>
             </div>
-            <div class="stat">
-              <span class="stat-num">AI/ML</span>
-              <span class="stat-label">Specialisation</span>
+            <div class="stat-item">
+              <span class="stat-val">AI/ML</span>
+              <span class="stat-lbl">Specialisation</span>
+            </div>
+          </div>
+
+          <div class="about-table">
+            <div class="arow">
+              <span class="akey">Location</span>
+              <span class="aval">Bhubaneswar, India</span>
+            </div>
+            <div class="arow">
+              <span class="akey">Degree</span>
+              <span class="aval">BTech — Computer Science</span>
+            </div>
+            <div class="arow">
+              <span class="akey">Available</span>
+              <span class="aval"><span class="open-tag"><span class="open-dot"></span>Open for Internships &amp; Projects</span></span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Skills ── -->
-  <section class="skills" id="skills">
+  <!-- ══ SKILLS ══ -->
+  <section class="section skills" id="skills">
     <div class="container">
-      <div class="section-eyebrow">02 · Skills</div>
+      <p class="eyebrow">02 · Skills</p>
       <h2 class="section-heading">What I<br>Work With.</h2>
       <div class="bento">
-        <div class="bento-card bento-wide bento-primary">
-          <span class="bento-label">Frontend</span>
-          <div class="bento-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+
+        <div class="bcard bcard-wide bcard-violet">
+          <div class="bcard-head">
+            <span class="bcard-ico">⚛️</span>
+            <span class="bcard-label">Frontend Development</span>
+          </div>
+          <div class="bcard-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Responsive Design</span>
           </div>
         </div>
-        <div class="bento-card bento-accent">
-          <span class="bento-label">Design</span>
-          <div class="bento-tags"><span>UI / UX</span><span>Figma</span></div>
+
+        <div class="bcard bcard-warm">
+          <div class="bcard-head">
+            <span class="bcard-ico">🎨</span>
+            <span class="bcard-label">UI / UX Design</span>
+          </div>
+          <div class="bcard-tags"><span>Figma</span><span>Wireframing</span><span>Prototyping</span></div>
         </div>
-        <div class="bento-card">
-          <span class="bento-label">Backend</span>
-          <div class="bento-tags">
+
+        <div class="bcard bcard-green">
+          <div class="bcard-head">
+            <span class="bcard-ico">🖥️</span>
+            <span class="bcard-label">Backend Basics</span>
+          </div>
+          <div class="bcard-tags">
             <span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span>
           </div>
         </div>
-        <div class="bento-card bento-tall bento-rose">
-          <span class="bento-label">AI / ML</span>
-          <div class="bento-icon">🤖</div>
-          <div class="bento-tags"><span>Python</span><span>Gemini AI</span><span>Observability</span></div>
+
+        <div class="bcard bcard-tall bcard-rose">
+          <div class="bcard-head">
+            <span class="bcard-ico">🤖</span>
+            <span class="bcard-label">AI / ML</span>
+          </div>
+          <div class="bcard-tags"><span>Python</span><span>Gemini AI</span><span>GenAI</span><span>Observability</span></div>
         </div>
-        <div class="bento-card">
-          <span class="bento-label">Other</span>
-          <div class="bento-tags"><span>Web3</span><span>Open Source</span><span>Git</span></div>
+
+        <div class="bcard bcard-cyan">
+          <div class="bcard-head">
+            <span class="bcard-ico">🔧</span>
+            <span class="bcard-label">Tools &amp; More</span>
+          </div>
+          <div class="bcard-tags"><span>Git</span><span>Linux</span><span>Open Source</span><span>Web3</span></div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Projects ── -->
-  <section class="projects" id="projects">
+  <!-- ══ PROJECTS ══ -->
+  <section class="section projects" id="projects">
     <div class="container">
-      <div class="section-eyebrow">03 · Projects</div>
+      <p class="eyebrow">03 · Projects</p>
       <h2 class="section-heading">What I've<br>Built.</h2>
 
-      <div class="projects-grid">
+      <div class="proj-list">
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-indigo">
-          <div class="pcard-num-bg" aria-hidden="true">01</div>
-          <div class="pcard-top-row">
-            <span class="pcard-num">01</span>
-            <span class="pcard-arrow">↗</span>
+        <article class="proj-item pv-violet">
+          <div class="pi-accent-line"></div>
+          <div class="pi-info">
+            <div class="pi-meta">
+              <span class="pi-num">01</span>
+              <span class="pi-cat">AI / ML</span>
+              <span class="pi-year">2026</span>
+            </div>
+            <h3 class="pi-title">MemoraX</h3>
+            <p class="pi-desc">An AI-powered study platform that transforms raw documents into interactive flashcards and adaptive quizzes using Google Gemini AI. Built to help students learn smarter, not harder.</p>
+            <div class="pi-stack">
+              <span>React</span><span>Gemini AI</span><span>Python</span><span>Node.js</span>
+            </div>
+            <a href="https://github.com/swetalin-10" target="_blank" class="pi-link">
+              View Project <span class="pi-arrow">↗</span>
+            </a>
           </div>
-          <span class="pcard-icon">🧠</span>
-          <h3 class="pcard-title">MemoraX</h3>
-          <p class="pcard-desc">AI-powered study platform that transforms documents into smart flashcards and quizzes using Gemini AI.</p>
-          <div class="pcard-tags">
-            <span>AI/ML</span><span>Gemini</span><span>React</span>
+          <div class="pi-visual">
+            <div class="pi-grid-pat"></div>
+            <span class="pi-bg-num" aria-hidden="true">01</span>
+            <div class="pi-emoji-wrap">
+              <span class="pi-emoji">🧠</span>
+            </div>
           </div>
-        </a>
+        </article>
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-orange">
-          <div class="pcard-num-bg" aria-hidden="true">02</div>
-          <div class="pcard-top-row">
-            <span class="pcard-num">02</span>
-            <span class="pcard-arrow">↗</span>
+        <article class="proj-item pv-warm">
+          <div class="pi-accent-line"></div>
+          <div class="pi-info">
+            <div class="pi-meta">
+              <span class="pi-num">02</span>
+              <span class="pi-cat">Web App</span>
+              <span class="pi-year">2026</span>
+            </div>
+            <h3 class="pi-title">Weather-Aware Journal</h3>
+            <p class="pi-desc">A mood-and-context-aware journaling app that integrates live weather data. Each entry is enriched with real-time atmospheric context, helping users reflect deeply on their day.</p>
+            <div class="pi-stack">
+              <span>JavaScript</span><span>REST API</span><span>CSS3</span><span>OpenWeather</span>
+            </div>
+            <a href="https://github.com/swetalin-10" target="_blank" class="pi-link">
+              View Project <span class="pi-arrow">↗</span>
+            </a>
           </div>
-          <span class="pcard-icon">🌦️</span>
-          <h3 class="pcard-title">Weather-Aware Journal</h3>
-          <p class="pcard-desc">A journaling app enriched with live weather data integration for mood-and-context-aware diary entries.</p>
-          <div class="pcard-tags">
-            <span>API</span><span>JavaScript</span><span>CSS</span>
+          <div class="pi-visual">
+            <div class="pi-grid-pat"></div>
+            <span class="pi-bg-num" aria-hidden="true">02</span>
+            <div class="pi-emoji-wrap">
+              <span class="pi-emoji">🌦️</span>
+            </div>
           </div>
-        </a>
+        </article>
 
-        <a href="https://github.com/swetalin-10" target="_blank" class="pcard pcard-rose">
-          <div class="pcard-num-bg" aria-hidden="true">03</div>
-          <div class="pcard-top-row">
-            <span class="pcard-num">03</span>
-            <span class="pcard-arrow">↗</span>
+        <article class="proj-item pv-rose">
+          <div class="pi-accent-line"></div>
+          <div class="pi-info">
+            <div class="pi-meta">
+              <span class="pi-num">03</span>
+              <span class="pi-cat">Full Stack</span>
+              <span class="pi-year">2026</span>
+            </div>
+            <h3 class="pi-title">Product Store</h3>
+            <p class="pi-desc">A production-ready full-stack e-commerce app with the MERN stack. Features complete CRUD operations, secure authentication, real-time updates, and a polished, responsive modern UI.</p>
+            <div class="pi-stack">
+              <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+            </div>
+            <a href="https://github.com/swetalin-10" target="_blank" class="pi-link">
+              View Project <span class="pi-arrow">↗</span>
+            </a>
           </div>
-          <span class="pcard-icon">🛒</span>
-          <h3 class="pcard-title">Product Store</h3>
-          <p class="pcard-desc">Full-stack MERN application with CRUD operations, authentication, and a fully responsive modern UI.</p>
-          <div class="pcard-tags">
-            <span>MERN</span><span>MongoDB</span><span>React</span>
+          <div class="pi-visual">
+            <div class="pi-grid-pat"></div>
+            <span class="pi-bg-num" aria-hidden="true">03</span>
+            <div class="pi-emoji-wrap">
+              <span class="pi-emoji">🛒</span>
+            </div>
           </div>
-        </a>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ── Contact ── -->
-  <section class="contact" id="contact">
+  <!-- ══ CONTACT ══ -->
+  <section class="section contact" id="contact">
+    <div class="contact-bg-dec" aria-hidden="true">Let's Talk</div>
     <div class="container">
-      <div class="section-eyebrow">04 · Contact</div>
-      <div class="contact-layout">
-        <div class="contact-heading-col">
-          <h2 class="section-heading">Let's<br>Talk.</h2>
-          <p class="contact-sub">Open to collaborations,<br>internships &amp; projects.</p>
+      <p class="eyebrow">04 · Contact</p>
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <h2 class="contact-heading">Let's<br><em>Talk.</em></h2>
+          <p class="contact-sub">Open to internships, collaborations, and exciting projects. Let's build something remarkable together.</p>
+          <div class="contact-badges">
+            <span class="cbadge">🚀 Fast Learner</span>
+            <span class="cbadge">🤝 Team Player</span>
+            <span class="cbadge">💡 Creative Thinker</span>
+          </div>
         </div>
-        <div class="contact-links-col">
-          <a href="mailto:swetalinrout2006@gmail.com" class="clink">
-            <span class="clink-label">Email</span>
-            <span class="clink-val">swetalinrout2006@gmail.com</span>
-            <span class="clink-arrow">↗</span>
+
+        <div class="contact-right">
+          <a href="mailto:swetalinrout2006@gmail.com" class="contact-email">
+            <span class="ce-text">swetalinrout2006@gmail.com</span>
+            <span class="email-arrow">↗</span>
           </a>
-          <a href="https://github.com/swetalin-10" target="_blank" class="clink">
-            <span class="clink-label">GitHub</span>
-            <span class="clink-val">github.com/swetalin-10</span>
-            <span class="clink-arrow">↗</span>
-          </a>
-          <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="clink">
-            <span class="clink-label">LinkedIn</span>
-            <span class="clink-val">swetalin-rout-995763361</span>
-            <span class="clink-arrow">↗</span>
-          </a>
+          <div class="clinks">
+            <a href="https://github.com/swetalin-10" target="_blank" class="clink">
+              <span class="cl-icon">⌥</span>
+              <span class="cl-label">GitHub</span>
+              <span class="cl-value">github.com/swetalin-10</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank" class="clink">
+              <span class="cl-icon">in</span>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-value">swetalin-rout-995763361</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="mailto:swetalinrout2006@gmail.com" class="clink">
+              <span class="cl-icon">@</span>
+              <span class="cl-label">Email</span>
+              <span class="cl-value">swetalinrout2006@gmail.com</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <footer>
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
     <div class="container footer-inner">
-      <span class="footer-logo">SR</span>
-      <p>© 2026 Swetalin Rout · HTML &amp; CSS</p>
-      <a href="#home" class="back-top">Back to top ↑</a>
+      <span class="footer-name">Swetalin Rout</span>
+      <span class="footer-credit">Designed &amp; Built with HTML &amp; CSS · 2026</span>
+      <a href="#home" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 
